@@ -14,7 +14,7 @@ void call_counter(void);
 int main(void){
     
 	cout<<("Hello World\n");
-    // Modified 
+    // Modified 2 
     int a;                         //variabile int locale automatica
     int static b = 1;              //variabile int locale statica inizizalizzata a un valore diverso da 0
     int static c;                  // variabile int locale statica non inizizlizzata
