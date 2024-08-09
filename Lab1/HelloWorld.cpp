@@ -10,8 +10,9 @@ void print(string s, vector<int> v);    //Definizione funzioni
 void fibonacci(int x, int y, vector<int>& v, int n);
 void call_counter(void);
 
-int main(void){
 
+int main(void){
+    
 	cout<<("Hello World\n");
     
     int a;                         //variabile int locale automatica
