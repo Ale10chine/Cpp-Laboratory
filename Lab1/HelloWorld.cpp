@@ -75,7 +75,7 @@ void call_counter(void){
     }
 
 // a. in quale delle sezioni riportate da size compare la variabile locale automatica? Perché?
-// Non compare in nessuna sezione perché è una variabile che si trova nell'RA del del main.
+// Non compare in nessuna sezione perché è una variabile che si trova nell'RA del main.
 //
 // b. perché la variabile locale automatica è “automatica”?
 // Perché si trova dentro allo scope della funzione main.

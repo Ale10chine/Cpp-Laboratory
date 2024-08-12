@@ -2,8 +2,8 @@
 #include "Rational.hpp"
 using namespace std;
 
-//la classe è stata implementata con lo scopo di returnare un nuovo 
-//oggetto dato dalla somma tra oggetto "parametro implicito" e oggetto "parametro esplicito"
+// La classe è stata implementata con lo scopo di returnare un nuovo 
+// oggetto dato dalla somma tra oggetto "parametro implicito" e oggetto "parametro esplicito"
 
 int main (void){
     
@@ -46,7 +46,7 @@ int main (void){
     
     sum = c+i;
     cout<<"\nCheck: La somma tra un oggetto Rational e un intero e': "<<sum<<"\n";
-    //sum = i+c;                                                              Non mi fa soomare i+c perchè ovviamente non esiste un overload di questo tipo
+    //sum = i+c;  //Non mi fa soomare i+c perchè ovviamente non esiste un overload di questo tipo
     //cout<<"\nLa somma tra intero e oggetto Rational e': "<<sum<<"\n";
     
     

@@ -12,7 +12,7 @@ Rational:: Rational(int n, int d) {num = n; den = d;}
 Rational:: Rational(int n1, int n2 , int d1, int d2) {num = n1*n2; den = d1*d2;}
 
 
-//modifying functions 
+//NON modifying functions 
 int  Rational::getNumerator() const {return num;} // implementabile solitamente dentro la classe
 
 int  Rational::getDenominator() const {return den;} //NOTA BENE IL const
@@ -22,7 +22,7 @@ double Rational:: object_doubleconv() const{                    //mi restituisce
         return result;
 }
 
-//NON modifying functions
+//modifying functions
 void  Rational::SetRational(int n, int d){ num = n; den = d; }
 
 
@@ -83,29 +83,29 @@ bool Rational::operator<(const Rational& r){
          else return false;
 }
 Rational Rational::operator+(const Rational& r){
-        int d = mcm_calculator(this->den, r.den);
-        int dx = this->num*(d/this->den);
-        int sx = r.num*(d/r.den);
-        //Rational result = Rational(dx+sx,d);  //senza semplificazioni        
-        Rational result = semplify_function(dx+sx,d);
-        return result; 
+    int d = mcm_calculator(this->den, r.den);
+    int dx = this->num * (d / this->den);
+    int sx = r.num * (d / r.den);
+    // Rational result = Rational(dx+sx,d);  //senza semplificazioni
+    Rational result = semplify_function(dx + sx, d);
+    return result;
 }
 
 Rational Rational::operator+(int c){
-        int dx = this->num;
-        int sx = c*this->den;
-        int d = this->den;
-        Rational result = semplify_function(dx + sx, d);
-        return result; 
+    int dx = this->num;
+    int sx = c * this->den;
+    int d = this->den;
+    Rational result = semplify_function(dx + sx, d);
+    return result;
 }
 
 Rational Rational::operator-(const Rational& r){
-        int d = mcm_calculator(this->den, r.den);
-        int dx = this->num*(d/this->den);
-        int sx = r.num*(d/r.den);
-        //Rational result = Rational(dx-sx,d);   //senza semlificazioni
-        Rational result = semplify_function(dx-sx,d);
-        return result; 
+    int d = mcm_calculator(this->den, r.den);
+    int dx = this->num * (d / this->den);
+    int sx = r.num * (d / r.den);
+    // Rational result = Rational(dx-sx,d);   //senza semlificazioni
+    Rational result = semplify_function(dx - sx, d);
+    return result;
 }
 
 Rational Rational::operator*(const Rational& r){
