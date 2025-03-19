@@ -8,8 +8,8 @@ void f_illegal();
 
 int main(void){
      
-    f(); 
-    //f_illegal();   da problemi anche poco fuori dall'array
+    //f(); 
+    f_illegal();   //da problemi anche poco fuori dall'array
      
      
  return 0;
@@ -27,9 +27,9 @@ void f(){
     cout<<p[3];
     cout<<"\n"<<p[33];   
     cout<<"\n"<<p[34];
-    cout<<"\n"<<p[35];
-    cout<<"\n"<<p[500];
-    cout<<"\n"<<p[5000];
+    //cout<<"\n"<<p[35];
+    //cout<<"\n"<<p[500];
+    //cout<<"\n"<<p[5000];
     //cout<<"\n"<<p[50000];  in questo range da problemi in esecuzione, si passa da memoria allocata a memoria non allocata
     //Non c'è il controllo sulla memoria che vai a leggere (su java lancia un eccezione, mentre qua non hai il controllo sul tipo) 
     // p[x>=10] è memoria sporca ossia garbage collector

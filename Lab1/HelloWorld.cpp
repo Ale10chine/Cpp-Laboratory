@@ -12,7 +12,7 @@ void call_counter(void);
 //
 int main(void)
 {
-
+ 
     cout << ("Hello World\n");
 
     int a;            // variabile int locale automatica
